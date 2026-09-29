@@ -1,0 +1,21 @@
+{
+  "name": "sablo-telegram-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram installment reminder bot for Sablo (Telegraf) — port of the Rubika bot",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start":       "node server.js",
+    "dev":         "node scripts/devPoll.js",
+    "remind":      "node scripts/runReminders.js",
+    "set-webhook": "node scripts/setWebhook.js"
+  },
+  "dependencies": {
+    "axios":    "^1.7.0",
+    "dotenv":   "^16.4.0",
+    "express":  "^4.19.0",
+    "mongoose": "^8.5.0",
+    "telegraf": "^4.16.3"
+  }
+}
